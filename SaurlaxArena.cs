@@ -7,7 +7,7 @@ namespace SaurlaxArena;
 public class SaurlaxArena : BasePlugin
 {
   public override string ModuleAuthor => "Saurlax";
-  public override string ModuleDescription => "A simple casual arena plugin for cs2";
+  public override string ModuleDescription => "A simple practice arena plugin for cs2.";
   public override string ModuleName => "SaurlaxArena";
   public override string ModuleVersion => "0.0.1";
 

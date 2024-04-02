@@ -26,7 +26,7 @@ public class SaurlaxArena : BasePlugin
     var player = @event.Userid;
     if (player.IsValid && !player.IsBot)
     {
-      player.PrintFormatToChat("Use .sa to see the available commands.");
+      player.PrintFormatToChat("Use .sa to see available commands.");
     }
     return HookResult.Continue;
   }

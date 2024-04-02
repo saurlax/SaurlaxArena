@@ -41,6 +41,10 @@ public static class Commands
       n = 1;
       player.PrintFormatToChat($"Cant parse {para[0]} to int, defaulting to 1.");
     }
+    else
+    {
+      n = Math.Min(n, 20);
+    }
     for (var i = 0; i < n; i++) Server.ExecuteCommand("bot_add_t");
     PrintFormatToChatAll($"Added {n} bots to T side.");
   }
@@ -51,6 +55,10 @@ public static class Commands
     {
       n = 1;
       player.PrintFormatToChat($"Cant parse {para[0]} to int, defaulting to 1.");
+    }
+    else
+    {
+      n = Math.Min(n, 20);
     }
     for (var i = 0; i < n; i++) Server.ExecuteCommand("bot_add_ct");
     PrintFormatToChatAll($"Added {n} bots to CT side.");
